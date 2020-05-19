@@ -1,0 +1,15 @@
+<div onclick="promptValue()">Click me!</div>
+
+<script>
+function promptValue(){
+  let random = Math.ceil(Math.random() * 10);
+  console.log(random);
+  let prom  = prompt('1 to 10');
+  if(random == prom){
+    return console.log('matched ' + prom);
+  }
+  else{
+    return console.log('Not match ' + prom)
+  }
+}
+</script>
